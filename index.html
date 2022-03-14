@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <form id="first">
+            <h2>CREATE YOUR COUNT</h2>
+            <h3>This is step 1</h3>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <input type="password" placeholder="Confirm Password" name="rpassword" required>
+            <input type="submit" value="Next">
+        </form>
+        <form id="second">
+            <h2>Sing Up</h2>
+            <label class="lbl">
+                First name
+                <input type="text" name="name" required minlength="6">
+            </label>
+            <label class="lbl">
+                Age
+                <input type="number" max="120" name="age" required>
+            </label>
+            <label class="lbl" >
+                Income
+                <input type="numer" name="income" required>
+            </label>
+            <label class="lbl">
+                More Info
+                <textarea name="info" required minlength="6"></textarea>                
+            </label>
+            <label class="lbl">
+                Gender <br>
+                <input type="radio" id="male" value="Male" name="gender">
+                <label for="male">Male</label>
+                <input type="radio" id="female" value="Female" name="gender">
+                <label for="female">Female</label>
+                <input type="radio" id="trans" value="Trans" name="gender">
+                <label for="trans">Trans</label>
+            </label>
+            <label class="lbl">
+                Plan
+                <select name="pan">
+                    <option value="">Select Plan</option>
+                </select>
+            </label>
+            <label class="lbl subs" >
+                <input type="checkbox" name="suscribe" required>
+                Subscribe to Newsletter
+            </label>
+            <input type="submit" value="Update">
+        </form>    
+
+        <form id="last">
+            <h2>Contact Form</h2>
+            <label >
+                First Name
+                <input type="text" name="name" required minlength="6" placeholder="Jhon">
+            </label>
+            <label>
+                Last Name
+                <input type="text" minlength="6" name="last" required placeholder="Doe">
+            </label>
+            <label>
+                Email
+                <input type="email" name="email" required placeholder="you@domain.com">
+            </label>
+            <label>
+                Message
+                <textarea name="mesage" required minlength="20" maxlength="140" rows="10" placeholder="Enter your message here"></textarea>                
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+        
+    </main>
+</body>
+</html>

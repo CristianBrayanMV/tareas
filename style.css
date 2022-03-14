@@ -1,0 +1,119 @@
+/* EJEMPLO 01---- PRIMER FORMULARIO */
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+form#first{    
+    width: 25%;
+}
+
+#first h2, #first h3{
+    color:rgb(119, 119, 119);
+    text-align: center;
+    margin-top:0;
+}
+#first h2{
+    margin-bottom: 5px;
+}
+#first input{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;    
+    border:1px solid silver;
+    padding: 15px 15px;
+    margin-bottom:10px;
+    font-size: 15px;
+}
+#first input[type="submit"]{
+    width: 40%;
+    background-color: rgba(0, 128, 0, 0.7);
+    color: white;
+    font-weight: bold;
+    margin:0 auto;
+    cursor: pointer;
+    margin-top:20px;
+}
+
+
+
+/* EJEMPLO 02 --- SEGUNDO FORMULARIO */
+
+form#second{
+    width: 25%;
+    background-color:rgb(231, 234, 238);
+    padding:5px 15px 15px 20px;
+    box-sizing: border-box;
+ 
+}
+
+#second .lbl{
+    display: block;
+    font-weight: bold;
+    margin-bottom:15px;
+   
+}
+
+#second .lbl input,#second .lbl textarea,#second .lbl select{
+    display: block;
+    width: 100%;
+    outline:none;
+    border:1px solid rgb(201, 199, 199);
+    padding:5px 0px;
+    margin-top:3px;
+}
+#second .lbl input[type=radio],#second .lbl input[type=checkbox]{
+    width: inherit;
+    display: inline;
+}
+
+#second label label, #second label.subs{
+    font-weight: normal;
+}
+
+#second input[type="submit"]{
+    outline:none;
+    background-color: rgb(42, 131, 158);
+    border:1px solid rgb(42, 131, 158);
+    color:white;
+    padding:8px 10px;
+    cursor:pointer;
+}
+
+
+
+/* ejemplo 03 ---- TERCER FORMULARIO */
+form#last{
+    width: 25%;
+    background-color: rgb(221, 235, 234);
+    padding:10px 20px;
+    
+}
+
+#last h2{
+    text-align: center;    
+}
+
+#last label input, #last label textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border:1px solid silver;
+    padding: 8px 5px;
+    outline:none;
+}
+#last label{
+    display: block;
+    margin-bottom: 15px;   
+}
+#last input[type="submit"]{
+    outline:none;
+    border:1px solid silver;
+    background-color: rgb(83, 155, 223);
+    color:white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin:0 auto;
+    display: block;
+    cursor:pointer;
+}
